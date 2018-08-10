@@ -59,6 +59,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0VY-9l-D65" kind="show" id="SBy-NB-2Bi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,6 +169,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arw-50-TiR">
+                                <rect key="frame" x="16" y="30" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="U77-54-YeG"/>
+                                    <constraint firstAttribute="width" constant="29" id="s9D-Dx-D4r"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="MSj-Gt-JTv" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="aZ7-wV-tyX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -180,12 +194,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dAQ-wY-2Nn" secondAttribute="trailing" id="X4h-9k-e5l"/>
                             <constraint firstItem="iYq-QS-O8g" firstAttribute="trailing" secondItem="uOW-lG-CRr" secondAttribute="trailingMargin" id="aNh-nh-wae"/>
                             <constraint firstItem="rHB-jH-VW5" firstAttribute="top" secondItem="Bub-hj-IP4" secondAttribute="bottom" id="fhR-AM-Voc"/>
+                            <constraint firstItem="arw-50-TiR" firstAttribute="top" secondItem="pkU-5V-zed" secondAttribute="bottom" constant="10" id="kGk-4G-SEw"/>
+                            <constraint firstItem="arw-50-TiR" firstAttribute="leading" secondItem="uOW-lG-CRr" secondAttribute="leadingMargin" id="pFJ-Yl-LB4"/>
                             <constraint firstItem="Bub-hj-IP4" firstAttribute="top" secondItem="uOW-lG-CRr" secondAttribute="top" id="sW7-bz-oI9"/>
                             <constraint firstItem="rHB-jH-VW5" firstAttribute="top" secondItem="iYq-QS-O8g" secondAttribute="bottom" constant="20" id="waX-Ed-Hpf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="y7O-FX-a44"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tlx-bp-20V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MSj-Gt-JTv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1013.6" y="132.68365817091455"/>
         </scene>
@@ -285,6 +303,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
