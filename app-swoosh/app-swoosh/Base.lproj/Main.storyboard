@@ -31,14 +31,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhF-P5-yOE">
                                 <rect key="frame" x="57.5" y="145" width="260" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="0Sg-Zb-hif"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="0Sg-Zb-hif"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK5-Xq-Zel">
-                                <rect key="frame" x="57.5" y="211" width="260" height="31.5"/>
+                                <rect key="frame" x="74" y="211" width="227" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -68,14 +68,14 @@
                         <constraints>
                             <constraint firstItem="GZj-xT-Lwx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07c-91-EVD"/>
                             <constraint firstItem="GZj-xT-Lwx" firstAttribute="top" secondItem="ZK5-Xq-Zel" secondAttribute="bottom" constant="25" id="2fE-D5-VNg"/>
-                            <constraint firstItem="ZK5-Xq-Zel" firstAttribute="width" secondItem="bhF-P5-yOE" secondAttribute="width" id="8Ba-cx-UmM"/>
+                            <constraint firstItem="ZK5-Xq-Zel" firstAttribute="width" relation="lessThanOrEqual" secondItem="bhF-P5-yOE" secondAttribute="width" id="8Ba-cx-UmM"/>
                             <constraint firstItem="bhF-P5-yOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Cc-JJ-IkD"/>
                             <constraint firstItem="che-EZ-4so" firstAttribute="top" secondItem="xyz-dA-h29" secondAttribute="bottom" constant="20" id="ByZ-U9-Ukm"/>
                             <constraint firstItem="ZK5-Xq-Zel" firstAttribute="top" secondItem="bhF-P5-yOE" secondAttribute="bottom" id="Gqe-Yg-WYe"/>
                             <constraint firstAttribute="bottom" secondItem="iEc-wA-OSh" secondAttribute="bottom" id="I9M-gE-g8e"/>
                             <constraint firstItem="ZK5-Xq-Zel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N00-zD-MDw"/>
                             <constraint firstItem="iEc-wA-OSh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O67-Wa-cEc"/>
-                            <constraint firstItem="GZj-xT-Lwx" firstAttribute="width" secondItem="bhF-P5-yOE" secondAttribute="width" id="RjQ-qu-EbF"/>
+                            <constraint firstItem="GZj-xT-Lwx" firstAttribute="width" relation="lessThanOrEqual" secondItem="bhF-P5-yOE" secondAttribute="width" id="RjQ-qu-EbF"/>
                             <constraint firstAttribute="trailing" secondItem="iEc-wA-OSh" secondAttribute="trailing" id="eWa-7z-x1e"/>
                             <constraint firstItem="bhF-P5-yOE" firstAttribute="top" secondItem="che-EZ-4so" secondAttribute="bottom" constant="85" id="nBz-hU-c3q"/>
                             <constraint firstItem="eT4-lH-zaS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nFo-L3-v8p"/>
